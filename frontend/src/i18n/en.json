@@ -1,0 +1,220 @@
+{
+  "app": {
+    "name": "Truth Trace",
+    "tagline": "Decision support for statement comparison",
+    "disclaimer": "Truth Trace highlights differences between statements. It does not determine guilt. Every result must be reviewed by the investigator."
+  },
+  "nav": {
+    "cases": "Cases",
+    "logout": "Sign out",
+    "language": "العربية",
+    "audit": "Audit",
+    "users": "Users"
+  },
+  "login": {
+    "title": "Sign in",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Sign in",
+    "eyebrow": "Statement forensics",
+    "headlineTop": "Two accounts.\nOne timeline.",
+    "headlineAccent": "Every difference traced to the words.",
+    "blurb": "The engine links what two interviews say about the same moment and shows you where they part. It never returns a verdict. That part is yours.",
+    "version": "api 0.1.0 · engine 0.1.0",
+    "online": "online",
+    "auditNote": "Every access is written to the audit trail.",
+    "lockedOut": "Locked out? Your case administrator can reset access. Failed attempts are recorded.",
+    "credentials": "Incorrect email or password.",
+    "unreachable": "Cannot reach the server. It may still be waking up — wait a moment and try again.",
+    "server": "The server answered with an error. Nothing was signed in."
+  },
+  "cases": {
+    "title": "Cases",
+    "new": "New case",
+    "reference": "Reference",
+    "caseTitle": "Title",
+    "description": "Description",
+    "status": "Status",
+    "created": "Created",
+    "empty": "No cases yet. Create the first one.",
+    "create": "Create case",
+    "eyebrow": "Caseload",
+    "headline": "Where the accounts diverge",
+    "subhead": "Cases you own or are a member of.",
+    "search": "Search reference or title",
+    "all": "All",
+    "statActive": "Open cases",
+    "statReview": "Under review",
+    "statTotal": "All cases",
+    "noMatches": "No cases match this filter.",
+    "shown": "{{shown}} / {{total}} shown"
+  },
+  "status": {
+    "open": "Open",
+    "under_review": "Under review",
+    "closed": "Closed",
+    "archived": "Archived"
+  },
+  "case": {
+    "interviews": "Interviews",
+    "newInterview": "Add interview",
+    "subject": "Subject",
+    "session": "Session label",
+    "date": "Date",
+    "statements": "Statements",
+    "addStatement": "Add statement",
+    "statementBody": "Statement text",
+    "compare": "Compare two interviews",
+    "interviewA": "First interview",
+    "interviewB": "Second interview",
+    "run": "Run comparison",
+    "runs": "Previous comparisons",
+    "noInterviews": "Add at least two interviews with the same subject to compare them.",
+    "claims": "{{count}} claims",
+    "sameSubjectOnly": "only same-subject pairs are comparable"
+  },
+  "findings": {
+    "title": "Results",
+    "engine": "Engine",
+    "all": "All",
+    "match": "Matching",
+    "possible_conflict": "Possible conflict",
+    "missing": "Missing",
+    "unclear": "Unclear",
+    "score": "Similarity score",
+    "scoreHint": "Internal engine score, not a calibrated confidence percentage.",
+    "field": "Detail",
+    "firstStatement": "First interview",
+    "secondStatement": "Second interview",
+    "notMentioned": "Not mentioned in this interview",
+    "review": "Your review",
+    "accepted": "Accept",
+    "rejected": "Reject",
+    "needs_more_info": "Needs more info",
+    "reviewed": "Reviewed: {{decision}}",
+    "empty": "No results for this filter.",
+    "vsInterview": "Interview vs interview",
+    "vsEvidence": "Statement vs evidence",
+    "statementSide": "Statement",
+    "linkScore": "link",
+    "unreviewed": "unreviewed"
+  },
+  "field": {
+    "time": "Time",
+    "location": "Location",
+    "person": "People",
+    "action": "Action",
+    "negation": "Negation",
+    "other": "General"
+  },
+  "evidence": {
+    "title": "Digital evidence",
+    "file": "File",
+    "kind": "Type",
+    "description": "Description",
+    "upload": "Upload",
+    "verify": "Verify integrity",
+    "check": "Check against statement",
+    "pickInterview": "Choose an interview…",
+    "empty": "No evidence uploaded yet.",
+    "evidenceSide": "Evidence",
+    "hashNote": "hashed on upload · verify before use"
+  },
+  "evidenceKind": {
+    "call_log": "Call log",
+    "message_log": "Message log",
+    "transcript": "Transcript",
+    "document": "Document",
+    "other": "Other"
+  },
+  "integrity": {
+    "verified": "Unchanged since upload",
+    "altered": "File has changed",
+    "missing_file": "File is missing",
+    "verifiedNote": "The stored file matches the digest recorded at upload. This does not mean its contents are accurate or that the file is authentic.",
+    "alteredNote": "The stored file no longer matches the digest recorded at upload. Analysis against this file is refused until it is resolved."
+  },
+  "reports": {
+    "title": "Investigation reports",
+    "pickFindings": "Choose the findings to include. The report freezes them when you submit it.",
+    "reportTitle": "Report title",
+    "summary": "Summary",
+    "create": "Create draft",
+    "submit": "Submit for review",
+    "approve": "Approve",
+    "return": "Return",
+    "decisionNote": "Reason (required to return)",
+    "preview": "Preview",
+    "pdf": "Download PDF",
+    "empty": "No reports yet.",
+    "itemCount": "{{count}} findings",
+    "supervisorNote": "Supervisor note",
+    "contentDigest": "Content SHA-256",
+    "awaitingOther": "Awaiting another reviewer — you cannot approve your own report."
+  },
+  "reportStatus": {
+    "draft": "Draft",
+    "submitted": "Submitted",
+    "approved": "Approved",
+    "returned": "Returned"
+  },
+  "role": {
+    "investigator": "investigator",
+    "supervisor": "supervisor",
+    "admin": "admin"
+  },
+  "waking": {
+    "title": "Waking the demo server…",
+    "detail": "The free tier sleeps when idle; the first request takes up to a minute."
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "audit": {
+    "eyebrow": "Audit trail",
+    "title": "Every action, kept",
+    "blurb": "Append-only. Every state-changing action on case data is recorded and can never be edited or deleted. Investigators see only the cases they are a member of.",
+    "entries": "Entries",
+    "count": "{{shown}} of {{total}}",
+    "action": "Action",
+    "allActions": "All actions",
+    "allTime": "All time",
+    "lastDays": "Last {{count}} days",
+    "when": "When",
+    "actor": "Actor",
+    "entity": "Entity",
+    "case": "Case",
+    "from": "From",
+    "empty": "No entries match this filter.",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "users": {
+    "eyebrow": "Access",
+    "title": "Users and roles",
+    "blurb": "Global roles govern what a user may do system-wide. Access to an individual case is granted separately, per case.",
+    "accounts": "Accounts",
+    "add": "Add user",
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "role": "Role",
+    "inactive": "inactive",
+    "readOnly": "read-only — only admins can add users",
+    "forbidden": "Your role cannot view the user list. This attempt was logged.",
+    "whatRolesDo": "What each role can do",
+    "roleHelp": {
+      "investigator": "Own and work the cases they are a member of. Run comparisons and record reviews.",
+      "supervisor": "Everything above, plus decide submitted reports and view the user list.",
+      "admin": "All cases, plus create users and assign global roles."
+    }
+  },
+  "common": {
+    "cancel": "Cancel",
+    "save": "Save",
+    "loading": "Loading…",
+    "error": "Something went wrong."
+  }
+}
